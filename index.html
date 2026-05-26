@@ -148,13 +148,13 @@
   <main>
     <header class="hero">
       <div class="kicker">Material de estudo · Módulo 2 · UFMG</div>
-      <h1>Sparse PCA — Trilha de Estudo</h1>
+      <h1>Sparse PCA  Trilha de Estudo</h1>
       <div class="sub">Cinco documentos do PCA clássico ao Branch-and-Bound certificadamente ótimo</div>
       <div class="meta">Tudo o que você precisa entender para fazer o trabalho da Lista</div>
     </header>
 
     <section id="trilha">
-      <h2 class="sec"><span class="num">📚</span> Trilha de estudo — Sparse PCA</h2>
+      <h2 class="sec"><span class="num"></span> Trilha de estudo: Sparse PCA</h2>
       <p class="lead">Cinco documentos didáticos, na ordem de dependência, que constroem todo o arcabouço conceitual
       necessário para fazer o trabalho da Lista: implementar o <strong>Branch-and-Bound para Sparse PCA</strong>
       (Optimal-SPCA, Berk &amp; Bertsimas, 2019). Cada um é autocontido, com intuição geométrica primeiro, figuras e
@@ -173,7 +173,7 @@
         <a class="doccard" href="01_pca_classico.html">
           <div class="docnum">01</div>
           <div class="docbody">
-            <h3>PCA clássico — do zero ao autovetor</h3>
+            <h3>PCA clássico: do zero ao autovetor</h3>
             <p class="dc-sub">A fundação: covariância, autovetores/autovalores, variância explicada, z-score, projeção.</p>
             <p class="dc-learn"><strong>Você aprende:</strong> Por que o autovetor de maior λ é a direção de máxima variância — e o que o PCA realmente captura.</p>
           </div>
@@ -181,7 +181,7 @@
         <a class="doccard" href="02_sparse_pca_o_problema.html">
           <div class="docnum">02</div>
           <div class="docbody">
-            <h3>Sparse PCA — o problema</h3>
+            <h3>Sparse PCA: o problema</h3>
             <p class="dc-sub">Componentes densos × esparsos, a norma ℓ₀, a formulação max x·Qx s.a. ‖x‖₀≤k, e por que é NP-difícil.</p>
             <p class="dc-learn"><strong>Você aprende:</strong> O que torna o Sparse PCA difícil (escolha combinatória do suporte) e a formulação MIO com o vetor y.</p>
           </div>
@@ -214,7 +214,7 @@
     </section>
 
     <section id="mapa">
-      <h2 class="sec"><span class="num">🔗</span> Mapa de dependências</h2>
+      <h2 class="sec"><span class="num"></span> Mapa de dependências</h2>
       <p>Os documentos encadeiam — cada um usa o anterior:</p>
       <div class="formula" style="text-align:center;font-size:16px">
         01 (autovetor, variância) → 02 (problema ℓ₀) → 03 (λ_max via potência) → 04 (B&amp;B + cotas) → 05 (deflação + 70%)
@@ -222,17 +222,17 @@
       <div class="box intuition">
         <span class="tag">Como estudar</span>
         <p>Leia na ordem. Em cada doc, tente responder as caixas verdes ("confira seu entendimento") <em>sem olhar</em>
-        antes de seguir. As primitivas do doc 03 e as cotas do doc 04 são o que você de fato vai implementar — pare
+        antes de seguir. As primitivas do doc 03 e as cotas do doc 04 são o que você de fato vai implementar, pare
         nelas até a intuição ficar sólida. O doc 01 pode ser revisão rápida se o PCA clássico já estiver firme.</p>
       </div>
     </section>
 
     <section id="escopo">
-      <h2 class="sec"><span class="num">🎯</span> O que é — e o que não é — isto</h2>
-      <p><strong>É:</strong> o material conceitual para <em>entender</em> cada peça do algoritmo antes de codar —
+      <h2 class="sec"><span class="num"></span> O que é e o que não é isto</h2>
+      <p><strong>É:</strong> o material conceitual para <em>entender</em> cada peça do algoritmo antes de codar,
       por que cada cota é válida, por que a poda funciona, por que a QR mede variância sem contar em dobro.</p>
       <p><strong>Não é:</strong> o código do trabalho. A implementação (datasets Spambase/Colon, experimentos, o
-      relatório PDF) é a etapa seguinte — estes documentos garantem que, ao codar, você saiba <em>o que</em> está
+      relatório PDF) é a etapa seguinte e estes documentos garantem que, ao codar, você saiba <em>o que</em> está
       fazendo e <em>por quê</em>.</p>
       <div class="box warning">
         <span class="tag">Fonte</span>
