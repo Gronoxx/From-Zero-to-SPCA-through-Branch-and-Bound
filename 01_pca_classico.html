@@ -941,7 +941,7 @@
       só o escala pelo autovalor \(\lambda\):</p>
       <div class="formula">\[ \Sigma\,v = \lambda\,v \;\Longrightarrow\; (\Sigma - \lambda I)\,v = 0 \]</div>
       <p>Esse sistema tem solução \(v\neq 0\) somente se \(\det(\Sigma - \lambda I)=0\). Geometricamente:
-      \(\det = 0\) significa que a transformação achata o espaço numa dimensão a menos — criando o subespaço
+      \(\det = 0\) significa que a transformação achata o espaço numa dimensão a menos, criando o subespaço
       onde o autovetor pode existir.</p>
       <h3>5.2 O polinômio característico</h3>
       <div class="formula">\[ \begin{aligned} \det(\Sigma-\lambda I) &= (2{,}5-\lambda)(1{,}0-\lambda) - 1{,}5^2 = 0\\ &\Longrightarrow\; \lambda^2 - 3{,}5\,\lambda + 0{,}25 = 0\\ &\Longrightarrow\; \lambda = \frac{3{,}5 \pm \sqrt{11{,}25}}{2} \end{aligned} \]</div>
@@ -1011,7 +1011,7 @@
       e é assim que o PCA é de fato calculado na prática (é o "SVD na prática" que aparece na tabela acima).</p>
 
       <div class="box intuition">
-        <span class="tag">Intuição geométrica — primeiro</span>
+        <span class="tag">Intuição geométrica inicial</span>
         <p>Na animação da §4.4.1, a matriz \(\Sigma\) esticava o círculo unitário numa <strong>elipse</strong>. A SVD
         faz o <em>mesmo</em> raciocínio, mas aplicado à <strong>matriz de dados</strong> \(X_c\): ela mede o quanto a
         nuvem de pontos se estica em cada direção principal. Esses comprimentos de estiramento são os
@@ -1023,7 +1023,7 @@
       <div class="formula">\[ X_c \;=\; U\,S\,V^\top \]</div>
       <p>onde, no nosso caso (\(X_c\) é \(5\times2\)):</p>
       <ul>
-        <li>\(V\) (\(2\times2\)) — suas colunas são as <strong>direções principais</strong>: exatamente os
+        <li>\(V\) (\(2\times2\)), cujas colunas são as <strong>direções principais</strong>, exatamente os
         <em>mesmos autovetores</em> \(v_1, v_2\) de \(\Sigma\) que achamos antes.</li>
         <li>\(S\) (\(2\times2\) diagonal) — os <strong>valores singulares</strong> \(\sigma_1,\sigma_2\) na diagonal,
         em ordem decrescente.</li>
@@ -1208,7 +1208,7 @@
           <li><strong>Visualizar:</strong> \(k=2\) ou \(3\) → um gráfico que revela a estrutura real (grupos,
           tendências) de dados que tinham centenas de eixos.</li>
           <li><strong>Comprimir:</strong> descrever cada ponto por \(k\) números em vez de \(d\) (ex.: 2 em vez de 100).</li>
-          <li><strong>Limpar ruído:</strong> os componentes descartados (\(\lambda\) pequeno) costumam ser ruído —
+          <li><strong>Limpar ruído:</strong> os componentes descartados (\(\lambda\) pequeno) costumam ser ruído,
           jogá-los fora muitas vezes <em>melhora</em> modelos a jusante.</li>
         </ul>
         <p>É a mesma reta da figura acima, só que num espaço de dezenas ou centenas de dimensões: o PCA acha as
@@ -1279,7 +1279,7 @@
 
       <h3>8.4 O problema do PCA denso — a ponte para o Sparse PCA</h3>
       <p>Há um porém que vai motivar todo o resto do curso. Um componente principal <strong>não é</strong> uma
-      das medidas originais — é uma <strong>combinação (soma ponderada) de TODAS elas</strong>. Os pesos dessa
+      das medidas originais, é uma <strong>combinação (soma ponderada) de TODAS elas</strong>. Os pesos dessa
       combinação chamam-se <em>loadings</em>. Para o nosso PC1, por exemplo:</p>
       <div class="formula">\[ \text{PC1} = 0{,}31\cdot\text{sép.comp} \;-\; 0{,}10\cdot\text{sép.larg} \;+\; 0{,}87\cdot\text{pét.comp} \;+\; 0{,}36\cdot\text{pét.larg} \]</div>
       <p>Repare: <strong>nenhum peso é zero</strong>. Para responder "o que PC1 <em>é</em>?" você precisa citar as
@@ -1334,7 +1334,7 @@
       </ul>
       <div class="box deep">
         <span class="tag">A moral</span>
-        <p>Não existe "o melhor \(k\)" universal — você <strong>escolhe onde ficar nesse botão</strong>, conforme
+        <p>Não existe "o melhor \(k\)" universal; você <strong>escolhe onde ficar nesse botão</strong>, conforme
         valoriza mais interpretabilidade/estabilidade ou variância. E as ferramentas para decidir com números na
         mão estão na série: a interpretabilidade e a seleção de variáveis aparecem no
         <a href="02_sparse_pca_o_problema.html">doc 02</a> e na matriz de Jaccard; a variância e a ortogonalidade
@@ -1381,3 +1381,14 @@
 l>
 >
 </html>
+html>
+>
+</html>
+/html>
+
+/html>
+l>
+l>
+
+/html>
+l>
